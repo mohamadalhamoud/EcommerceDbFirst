@@ -1,0 +1,21 @@
+﻿@model List<EcommerceDbFirst.Customer>
+@{
+    ViewBag.Title = "CustomersInCity";
+}
+
+<h2>Customers In This City Are:</h2>
+<ul>
+    @if (Model != null)
+     {
+        foreach (var customer in Model)
+        {
+            <li>@customer.Name</li>
+        }
+    }
+</ul>
+@using(Html.BeginForm())
+{
+    @Html.DropDownList("City","Choose City")
+    <br />
+    <input type="submit" value="Get The Results"/>
+}
