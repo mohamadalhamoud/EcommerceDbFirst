@@ -1,0 +1,3 @@
+2019-08-14 14:33:16.8297|INFO|EcommerceDbFirst.Controllers.HomeController|User is getting a list of citites
+2019-08-14 14:38:17.3977|INFO|EcommerceDbFirst.Controllers.HomeController|User is getting a list of citites
+2019-08-14 14:39:04.7288|ERROR|EcommerceDbFirst.Controllers.HomeController|An Error Occured while getting the user 1 infoThe data reader has more than one field. Multiple fields are not valid for EDM primitive or enumeration types.

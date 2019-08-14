@@ -1,0 +1,16 @@
+﻿@model List<EcommerceDbFirst.Controllers.ProductWithCategory>
+@{
+    ViewBag.Title = "GetProductsWithCategories";
+}
+
+<h2>Products With Categories:</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @Html.ActionLink(@item.ProductName,"GetProductDetails",new { id = item.ProductId })
+             is in category @item.CategoryName
+        </li>
+    }
+</ul>
+
